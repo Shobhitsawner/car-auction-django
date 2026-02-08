@@ -7,46 +7,40 @@ The project follows Django best practices with a clean separation between projec
 
 ## 📁 Complete Project Structure
 
-CAR/
+car-auction-django/
 │
-├── auction/ # Main application (business logic)
-│ ├── pycache/ # Python cache files
+├── auction/ # Main application (auction logic)
 │ ├── migrations/ # Database migration files
 │ │ └── init.py
-│ │
 │ ├── init.py
-│ ├── admin.py # Django admin configuration
+│ ├── admin.py # Admin panel configuration
 │ ├── apps.py # App configuration
-│ ├── models.py # Database models (Car, Bid, etc.)
+│ ├── models.py # Database models (Car, Bid)
 │ ├── tests.py # Unit tests
-│ ├── urls.py # App-level URL routing
-│ └── views.py # Request handling & business logic
+│ ├── urls.py # App-level routing
+│ └── views.py # Business logic & request handling
 │
-├── car_auction/ # Project configuration folder
-│ ├── pycache/
+├── car_auction/ # Project configuration
 │ ├── init.py
 │ ├── asgi.py # ASGI configuration
-│ ├── settings.py # Global project settings
+│ ├── settings.py # Global settings
 │ ├── urls.py # Root URL configuration
 │ └── wsgi.py # WSGI configuration
 │
-├── templates/ # HTML templates (Frontend)
-│ ├── base.html # Base layout template
-│ ├── home.html # Home page (list of auction cars)
-│ ├── add_car.html # Add car auction form
+├── templates/ # HTML templates
+│ ├── base.html # Base layout
+│ ├── home.html # Home page (auction listings)
+│ ├── add_car.html # Add car form
 │ ├── car_detail.html # Car details & bidding page
-│ ├── login.html # User login page
-│ └── signup.html # User registration page
+│ ├── login.html # Login page
+│ └── signup.html # Signup page
 │
-├── media/ # Uploaded media files
+├── media/ # Uploaded files
 │ └── car_images/ # Uploaded car images
 │
 ├── db.sqlite3 # SQLite database (development)
-├── manage.py # Django CLI utility
+├── manage.py # Django command-line utility
 └── README.md # Project documentation
-
-
----
 
 ## 📌 Folder & File Responsibilities
 
